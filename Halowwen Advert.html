@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halloween Heavy Plant Hire</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+  /* Stack a gradient on top of the image */
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
+    url('Haloween background.jpg') no-repeat center top;
+  background-size: cover; /* ensures it fills the viewport without repeating */
+  background-attachment: fixed; /* optional: keeps image fixed on scroll */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+  .hero {
+    background: url('https://images.unsplash.com/photo-1602524200567-1caa1b09a514?auto=format&fit=crop&w=800&q=80') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 {
+    font-size: 48px;
+    color: #ff6b00;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  .btn-hire {
+    background-color: #ff6b00;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .services {
+    padding: 40px 20px;
+  }
+  .service-card {
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .service-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  .footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  .pumpkin {
+    width: 50px;
+    margin: 0 5px;
+  }
+
+  h1 {
+    font-family: "creepster", cursive;
+    color: orange;
+    text-shadow: 2px 2px 6px black;
+  }
+  .fade-in {
+  opacity: 0;
+  animation: fadeIn 2.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1.5s ease-out forwards;
+  animation-delay: 1.5s; /* wait until heading finishes */
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<!-- Hero Section -->
+<section class="hero" style="position: relative;">
+  <img src="Logo.png" alt="Logo" style="width: 15%; position: absolute; top: 20px; left: 20px;">
+  <div class="hero-content" style="text-align: center; padding-top: 100px;">
+    <h1 class="fade-in">Spooktacularly Good Plant Hire!</h1>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services container slide-up" >
+  <div class="row">
+    <div class="col-md-5">
+    <h2>Ghost-Bustingly Bright Hybrid LED Towerlights!</h2>
+    <p>Available in 24 hours</p>
+    <p>Our Trime Hybrid LED Towerlights are the perfect way to ensure you keep your site safe and away from unwanted eyes.</p>
+        <a href="tel:+441670590777" class="btn-hire">Call our Team Today</a></p>
+    </div>
+
+    <div class="col-md-7">
+  <div class="service-card" style="border-radius: 15px; border: 2px solid #ff6b00; background-color: #111; padding: 20px;">
+    <a href="https://www.hubbwayhire.co.uk/product/category/plant-hire/self-drive/hybrid-led-towerlights/">
+      <img src="Hubbway Tower Light.png" alt="Towerlight" style="width: 200%;">
+    </a>
+    <h4>Trime Hybrid LED Towerlights</h4>
+    <p>Spot those ghosts from afar! With our Hybrid LED Towerlights</p>
+    <ul style="text-align: left;">
+        <li>Illuminate Walkways and Paths</li>
+        <li>Low / Zero Emissions</li>
+        <li>6 x 100w LED</li>
+        <li>8.5m Max Height</li>
+        <li>9 Hours Recharge Time</li>
+        <li>CO<sup>2</sup> of only 63Kg per month</li>
+
+    </ul>
+    <a href="https://www.hubbwayhire.co.uk/wp-content/uploads/2022/09/Towerlight-Trime-Hybrid-X-Eco-hybrid_lithium-Technical-Sheet-draft_inhousePRINT-1.pdf" style="text-align: left;" class="btn-hire">View the Specs
+    </a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Halloween Footer -->
+<section class="footer slide-up">
+  <p>🎃 Happy Halloween from Hubbway Hire Ltd! 🎃</p>
+  <p>Call us now: <strong>01670 590 777</strong> | Visit: <a href="www.hubbwayhire.co.uk" style="color:#ff6b00;">www.hubbwayhire.co.uk</a></p>
+</section>
+
+</body>
+</html>
