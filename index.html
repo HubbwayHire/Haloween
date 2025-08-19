@@ -47,13 +47,24 @@
     text-shadow: 1px 1px 2px #000;
   }
   .btn-hire {
-    background-color: #ff6b00;
-    color: #fff;
-    font-weight: bold;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: #ff6b00;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: normal;  /* allows text to wrap */
+  text-align: center;
+  max-width: 100%;       /* ensures button doesn't exceed container */
+  word-wrap: break-word; /* breaks long words if necessary */
+}
+@media (max-width: 576px) {
+  .btn-hire {
+    padding: 10px 15px;  /* reduce padding for small screens */
+    font-size: 14px;      /* slightly smaller text */
   }
+}
   .services {
     padding: 40px 20px;
   }
@@ -99,7 +110,7 @@
   opacity: 0;
   transform: translateY(50px);
   animation: slideUp 1.5s ease-out forwards;
-  animation-delay: 2.5s; /* wait until heading finishes */
+  animation-delay: 1.5s; /* wait until heading finishes */
 }
 
 @keyframes slideUp {
@@ -122,7 +133,7 @@
 
 <!-- Hero Section -->
 <section class="hero" style="position: relative;">
-  <img src="Logo.png" alt="Logo" style="width: 20%; position: absolute; top: 20px; left: 20px;">
+  <img src="Logo.png" alt="Logo" style="width: 15%; position: absolute; top: 20px; left: 20px;">
   <div class="hero-content" style="text-align: center; padding-top: 100px;">
     <h1 class="fade-in">Spooktacularly Good Plant Hire!</h1>
   </div>
@@ -143,7 +154,7 @@
     <div class="col-md-7">
   <div class="service-card" style="border-radius: 15px; border: 2px solid #ff6b00; background-color: #111; padding: 20px;">
     <a href="https://www.hubbwayhire.co.uk/product/category/plant-hire/self-drive/hybrid-led-towerlights/">
-      <img src="Hubbway Tower Light.png" alt="Towerlight" style="width: 200%;">
+      <img src="Hubbway Tower Light.png" alt="Towerlight" >
     </a>
     <h4>Trime Hybrid LED Towerlights</h4>
     
@@ -172,5 +183,3 @@
 
 </body>
 </html>
-
-
